@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Options</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+    .action-buttons {
+      display: flex;
+      justify-content: space-between;
+    }
+    .action-buttons button {
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+    .remove-btn {
+      background: none;
+      border: none;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+	
+  </style>
+</head>
+<body background-color='#222'>
+	<center><img src="icons/logo4-256.png">
+  <h1>Manage Replacements</h1></center>
+    <table id="replacementsTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Replacement</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="replacementsTableBody"></tbody> <!-- The body where data rows are populated -->
+    </table>
+  <div class="">
+    <button id="addRowButton">+ Add Row</button>
+	<button id="defaultsButton">MAGA Defaults</button>
+  <button id="antidefaultsButton">Anti-MAGA Defaults</button>
+  </div>
+
+  <script type="module" src="scripts/options.js"></script>
+  <script type="module" src="scripts/replacements.js"></script>
+</body>
+</html>

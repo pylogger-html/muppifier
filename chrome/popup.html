@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <script src="popup.js" defer></script>
+	<link id="muppStyleSheet" href="popup.css" rel="stylesheet">
+</head>
+<body id="muppPopupBody" style>
+	<div>
+		<header id="sbPopupLogo" class="sbPopupLogo">
+		<img src="icons/logo4-256.png" alt="Maga Muppifier" id="muppPopupLogo">
+		</header>
+		<div class="sbControlsMenu">
+			
+			<!--github: mbledkowski/toggle-switch-->
+			<label id="disableExtension" for="toggleSwitch" class="toggleSwitchContainer sbControlsMenu-item">
+			  <span class="toggleSwitchContainer-switch">
+				<input type="checkbox" style="display: none" id="toggleSwitch" checked="">
+				<span class="switchBg shadow"></span>
+				<span class="switchBg white"></span>
+				<span class="switchBg green"></span>
+				<span class="switchDot"></span>
+			  </span>
+			  <span id="disableSkipping">Muppifying 🤩</span>
+			  <span id="enableSkipping" style="display: none">Disabled 😬</span>
+			</label>
+			<button id="optionsButton" class="sbControlsMenu-item" title="Enable Invidious support, disable auto skip, hide buttons and more.">
+			  <img src="/icons/settings.svg" alt="Settings icon" width="23" height="23" class="sbControlsMenu-itemIcon" id="sbPopupIconSettings">
+			  Options
+			</button>
+		  </div>
+	</div>
+</body>
+</html>
