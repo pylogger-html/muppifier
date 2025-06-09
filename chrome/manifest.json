@@ -20,7 +20,9 @@
     "default_popup": "popup.html",
     "default_icon": "icons/tinyLogo_256.png"
   },
-  
+  "icons": {
+	"128": "icons/logo4_tiny.png"
+  },
   "options_page": "options.html",
   
   "host_permissions": ["<all_urls>"],
