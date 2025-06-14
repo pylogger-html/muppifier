@@ -1,0 +1,62 @@
+Privacy Policy for MAGA Muppifier
+Effective Date: 6/14/2025
+
+Your privacy matters. MAGA Muppifier is designed to function entirely on
+your device without collecting or transmitting any personal data.
+
+1. 🛑 No Data Leaves Your Device
+--------------------------------
+All data used by MAGA Muppifier is stored locally on your computer. We do
+not collect, transmit, store, or log any information to remote servers—
+either ours or any third party’s.
+
+2. 🔒 No Tracking or Analytics
+------------------------------
+MAGA Muppifier does not use cookies, analytics, fingerprinting, or any form
+of behavioral tracking. Your activity is not monitored in any way.
+
+3. 👤 GDPR Compliance
+---------------------
+We are committed to protecting your rights under the General Data
+Protection Regulation (GDPR), even though MAGA Muppifier does not collect
+any personal information.
+
+- Lawful Basis for Processing:
+  We do not process personal data, so no legal basis is required.
+
+- Data Retention:
+  Since no data is collected, there is nothing to store or retain.
+
+- Third-Party Sharing:
+  No data is shared with any external services or organizations.
+
+- Automated Decision-Making/Profiling:
+  MAGA Muppifier performs no automated profiling or decision-making based
+  on personal data.
+
+4. 📬 Your Rights Under GDPR
+----------------------------
+While not applicable due to the lack of data collection, here are your
+rights under GDPR:
+
+- Right to access your data
+- Right to correct inaccurate data
+- Right to delete your data
+- Right to restrict or object to processing
+- Right to data portability
+
+Again, these are provided for transparency—none of your personal data is
+ever collected or stored.
+
+5. 📞 Contact Us
+----------------
+If you have questions about this policy, please contact:
+
+https://github.com/pylogger-html/muppifier
+
+---
+
+This policy may be updated if the extension’s behavior changes. Any updates
+will be reflected here with a new effective date.
+
+Thank you for using MAGA Muppifier.
