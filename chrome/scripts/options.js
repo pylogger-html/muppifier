@@ -46,13 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     nameInput.value = name;
                     nameInput.type = "text";
                     nameInput.placeholder = "Enter name";
-                    nameInput.addEventListener("input", () => {
+                    nameInput.addEventListener("blur", () => {
                         // Update key in the replacements object
                         const newName = nameInput.value;
-                        const oldReplacement = replacements[name]; // Old key
-                        delete replacements[name];
-                        replacements[newName] = oldReplacement;
-                        saveTableState(replacements);
+                        if (newName !== name) {
+                            const oldReplacement = replacements[name]; // Old key
+                            delete replacements[name];
+                            replacements[newName] = oldReplacement;
+                            saveTableState(replacements);
+                        }
                     });
                     nameCell.appendChild(nameInput);
                     
@@ -83,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         // Get the updated name and selected ID
                         const updatedName = nameInput.value;
                         const newId = replacementSelect.value;
-                        console.log(`Saving: ${updatedName} => ${newId}`);
+                        console.debug(`Saving: ${updatedName} => ${newId}`);
                         replacements[updatedName] = newId;
                         saveTableState(replacements);
                     });
@@ -155,7 +157,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("antidefaultsButton").addEventListener("click", () => {
         appendReplacements(antidefaultReplacements, populateTable);
     });
-    //-------------------------------------------------------------------------
 
+    document.getElementById("addRowButton").addEventListener("click", () => {
+        appendReplacements({ "": "Random" }, populateTable);
+    });
+
+    //-------------------------------------------------------------------------
+    
     populateTable();  // Initial population of the table
 });
