@@ -20,7 +20,7 @@ Isn't that better?
 ## FAQ
 
 ### 1. **Why did you do this?**
-   I wanted a way to have a break from reading about the same people every day. MAGA Muppifier filters text on your browser and does not alter the original content. You'll get to escape to your own custom alternate reality. Don't dwell too long, or you may not be able to go back...
+   I wanted a break from reading about the same people every day. MAGA Muppifier filters text on your browser and does not alter the original content. You'll get to escape to your own custom alternate reality. Don't dwell too long, or you may not be able to go back...
 
 ### 2. **I want to add more names to the list. Can I?**
    Yes, add as many names as you want.
@@ -37,4 +37,7 @@ Isn't that better?
 ### 6. **Who's side are you on?**
    I have my own US political opinions, but the plugin doesn't. It's got people from both sides
    and you can add more. As many as you want.
+
+### 7. **What inspired the genre selection?**
+   Muppets were involved in each [of](https://youtu.be/rUVEH3OF-n0?si=r9dimZGp3QFHX7D4&t=159) [them](https://www.youtube.com/watch?v=5j0hwTrgjrQ). I would have included Fraggle rock too, but it's not too distinctive when almost everyone is named Fraggle.
 

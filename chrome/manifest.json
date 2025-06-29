@@ -1,7 +1,7 @@
 {
   "name": "Maga Muppifier",
   "description": "Muppify your World...",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   
   "permissions": ["storage"],
@@ -23,7 +23,11 @@
   "icons": {
 	"128": "icons/logo4_tiny.png"
   },
-  "options_page": "options.html",
+
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
   
   "host_permissions": ["<all_urls>"],
   "content_scripts": [

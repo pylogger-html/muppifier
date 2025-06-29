@@ -1,21 +1,34 @@
 [
   { "id": "id-1", "shortName": "Kermit", "fullName": "Kermit the Frog", "genre": "Muppets" },
-  { "id": "id-2", "shortName": "Ms. Piggy", "fullName": "Pigathia Lee", "genre": "Muppets" },
+  { "id": "id-2", "shortName": "Miss Piggy", "fullName": "Pigathia Lee", "genre": "Muppets" },
   { "id": "id-3", "shortName": "Fozzie", "fullName": "Fozzie Foz Bear", "genre": "Muppets" },
   { "id": "id-4", "shortName": "Gonzo", "fullName": "Gonzo the Great", "genre": "Muppets" },
-  { "id": "id-5", "shortName": "Rizzo", "fullName": "Rizzo Rat", "genre": "Muppets" },
-  { "id": "id-6", "shortName": "Bunsen", "fullName": "Bunsen Honeydew", "genre": "Muppets" },
+  { "id": "id-5", "shortName": "Rizzo", "fullName": "Rizzo the Rat", "genre": "Muppets" },
+  { "id": "id-6", "shortName": "Bunsen", "fullName": "Dr. Bunsen Honeydew", "genre": "Muppets" },
   { "id": "id-7", "shortName": "Beaker", "fullName": "Beaker MEE-MEE-MEEP", "genre": "Muppets" },
-  { "id": "id-8", "shortName": "Dr. Teeth Jr", "fullName": "Dr Gerald Teeth Jr", "genre": "Muppets" },
+  { "id": "id-8", "shortName": "Dr Gerald Teeth Jr", "fullName": "Dr Gerald Teeth Jr", "genre": "Muppets" },
+  { "id": "id-9", "shortName": "Electric Mayhem", "fullName": "Dr. Teeth and the Electric Mayhem", "genre": "Muppets" },
+  { "id": "id-10", "shortName": "Rowlf", "fullName": "Rowlf the Dog", "genre": "Muppets" },
+  { "id": "id-11", "shortName": "Statler", "fullName": "Statler and Waldorf", "genre": "Muppets" },
+  { "id": "id-12", "shortName": "Camilla", "fullName": "Camilla the Chicken", "genre": "Muppets" },
 
-  { "id": "id-9", "shortName": "Elmo", "fullName": "Elmo Monster", "genre": "Sesame Street" },
-  { "id": "id-10", "shortName": "Big Bird", "fullName": "Bigus Canarius", "genre": "Sesame Street" },
-  { "id": "id-11", "shortName": "Cookie", "fullName": "Cookie Monster", "genre": "Sesame Street" },
-  { "id": "id-12", "shortName": "Grover", "fullName": "Grover Kent", "genre": "Sesame Street" },
-  { "id": "id-13", "shortName": "Oscar", "fullName": "Oscar the Grouch", "genre": "Sesame Street" },
-  { "id": "id-14", "shortName": "Abby", "fullName": "Abby Cadabby", "genre": "Sesame Street" },
-  { "id": "id-15", "shortName": "The Count", "fullName": "Count von Count", "genre": "Sesame Street" },
-  { "id": "id-16", "shortName": "Telly", "fullName": "Telly Monster", "genre": "Sesame Street" },
-  { "id": "id-17", "shortName": "Snuffy", "fullName": "Mr. Snuffleupagus", "genre": "Sesame Street" }
+
+  { "id": "id-100", "shortName": "Elmo", "fullName": "Elmo Monster", "genre": "Sesame Street" },
+  { "id": "id-101", "shortName": "Big Bird", "fullName": "Bigus Canarius", "genre": "Sesame Street" },
+  { "id": "id-102", "shortName": "Cookie", "fullName": "Cookie Monster", "genre": "Sesame Street" },
+  { "id": "id-103", "shortName": "Grover", "fullName": "Grover Kent", "genre": "Sesame Street" },
+  { "id": "id-104", "shortName": "Oscar the Grouch", "fullName": "Oscar the Grouch", "genre": "Sesame Street" },
+  { "id": "id-105", "shortName": "Abby", "fullName": "Abby Cadabby", "genre": "Sesame Street" },
+  { "id": "id-106", "shortName": "The Count", "fullName": "Count von Count", "genre": "Sesame Street" },
+  { "id": "id-107", "shortName": "Telly", "fullName": "Telly Monster", "genre": "Sesame Street" },
+  { "id": "id-108", "shortName": "Snuffy", "fullName": "Mr. Snuffleupagus", "genre": "Sesame Street" },
+
+  { "id": "id-200", "shortName": "Yoda", "fullName": "Minch Yoda", "genre": "Star Wars" },
+  { "id": "id-201", "shortName": "Obi-Wan", "fullName": "Obi-Wan Kenobi", "genre": "Star Wars" },
+  { "id": "id-202", "shortName": "Skywalker", "fullName": "Luke Skywalker", "genre": "Star Wars" },
+  { "id": "id-203", "shortName": "Leia", "fullName": "Leia Organa", "genre": "Star Wars" },
+  { "id": "id-204", "shortName": "R2-D2", "fullName": "R2-D2", "genre": "Star Wars" },
+  { "id": "id-205", "shortName": "C-3P0", "fullName": "C-3P0", "genre": "Star Wars" },
+  { "id": "id-206", "shortName": "Vader", "fullName": "Darth Vader", "genre": "Star Wars" }
 ]
 

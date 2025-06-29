@@ -1,13 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
     const defaultReplacements = {
-        "Elon Musk": "id-1", //Kermit
-        "Donald Trump": "id-4" //Gonzo
+        "Elon Musk" : "id-1", //Kermit
+        "JD Vance" : "Random",
+        "Karoline Leavitt" : "Random",
+        "Pete Hegseth" : "id-7", //beaker
+        "Donald Trump" : "id-4" //Gonzo
     };
 
     const antidefaultReplacements = {
-        "Joe Biden": "id-1", //Kermit
-        "Hilary Clinton": "id-2" //Ms Piggy
+        "Joe Biden" : "id-1", //Kermit
+        "Kamala Harris" : "id-12", //Camilla sounds very similar to Kamala
+        "Hilary Clinton" : "id-2",
+        "Gavin Newsom" : "id-103",
+        "Bernie Sanders" : "id-3"
     };
+    
 
     // Function to retrieve replacement options (long names) from background script
     function getReplacementOptions() {
@@ -29,10 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to populate the table with replacement data
     function populateTable() {
         chrome.storage.sync.get(["replacements"], (result) => {
-            let replacements = result.replacements || defaultReplacements;
+            let replacements = result.replacements || {};
 
             const tableBody = document.getElementById("replacementsTableBody");
+            const noEntriesMsg = document.getElementById("no-entries-message");
             tableBody.innerHTML = "";  // Clear any existing rows
+            
+            // Show or hide "no entries" message based on whether replacements exist
+            if (Object.keys(replacements).length === 0) {
+                noEntriesMsg.style.display = "block";   // Show the message
+                tableBody.parentElement.style.display = "none"; // Hide the whole table container
+            } else {
+                noEntriesMsg.style.display = "none";    // Hide the message
+                tableBody.parentElement.style.display = "table"; // Show the table container
+            }
 
             // Fetch replacement options from the background script (IndexedDB)
             getReplacementOptions().then(options => {
@@ -140,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
             //prevent overwriting of existing keys
             for (const key in newEntries) {
                 if (!(key in updated)) {
-                    updated[key] = newEntries[key].id;
+                    updated[key] = (newEntries[key].id === "Random") ? "Random" : newEntries[key].id;
                 }
             }
 

@@ -1,17 +1,25 @@
-// background.js
-chrome.runtime.onInstalled.addListener(() => {
-  fetch(chrome.runtime.getURL('data/replacements.json'))
-    .then((res) => res.json())
-    .then((entries) => {
-      openDatabase().then((db) => {
-        const tx = db.transaction("replacements", "readwrite");
-        const store = tx.objectStore("replacements");
-        entries.forEach((entry) => store.put(entry));
-        return tx.complete;
-      }).catch((error) => {
-        console.error("Failed to open database:", error);
-      });
-    });
+// background.js (Manifest V3 service‑worker)
+chrome.runtime.onInstalled.addListener(async (details) => {
+  /* ---------- 1️⃣  Seed the IndexedDB (runs on every install/update) ---------- */
+  try {
+    const res     = await fetch(chrome.runtime.getURL('data/replacements.json'));
+    const entries = await res.json();
+
+    const db = await openDatabase();
+    const tx = db.transaction('replacements', 'readwrite');
+    const store = tx.objectStore('replacements');
+    entries.forEach((entry) => store.put(entry));
+    await tx.complete;
+  } catch (err) {
+    console.error('Failed to seed database:', err);
+  }
+
+  /* ---------- 2️⃣  Open options.html the very first time only ---------- */
+  if (details.reason === 'install') {
+    // Works in all modern Chromium‑based browsers
+    chrome.runtime.openOptionsPage()
+      .catch(err => console.error('Could not open options page:', err));
+  }
 });
 
 // Define openDatabase function
